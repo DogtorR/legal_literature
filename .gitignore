@@ -1,7 +1,40 @@
+# Local environment files
 .env
+.env.*
+!.env.example
+
+# Python caches and test artifacts
 __pycache__/
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
 *.pyc
+*.pyo
+*.pyd
+
+# Build and packaging outputs
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Editor and OS metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Agent runtime artifacts
 metadata_results.jsonl
 candidates.jsonl
 legality_audit.jsonl
