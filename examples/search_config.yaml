@@ -1,0 +1,23 @@
+project_name: LEGAL_LITERATURE_AGENT
+query_name: carbapenemase_detection_dry_run
+keywords:
+  - carbapenemase detection
+year_from: 2020
+year_to: 2025
+publication_types:
+  - journal-article
+include_terms:
+  - carbapenemase
+  - detection
+exclude_terms:
+  - review
+journals: []
+authors: []
+max_results_per_source: 100
+max_downloads: 0
+dry_run: true
+sources:
+  - openalex
+  - europe_pmc
+  - pubmed
+download_policy: legal_oa_only

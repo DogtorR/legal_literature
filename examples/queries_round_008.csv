@@ -1,0 +1,3 @@
+input_id,title,doi,pmid,keywords,year_from,year_to,publication_type,journal,author,max_results,include_terms,exclude_terms,source_preference
+round_008_q001,,,,carbapenemase detection,2020,2025,research-article,,,20,carbapenemase;detection;KPC;NDM;OXA-48;IMP;VIM,animal only;editorial;comment;letter,openalex;crossref;europe_pmc;pubmed;unpaywall
+round_008_q002,,,,carbapenemase gene detection rapid molecular assay,2020,2025,research-article,,,20,carbapenemase;detection;KPC;NDM;OXA-48;IMP;VIM,animal only;editorial;comment;letter,openalex;crossref;europe_pmc;pubmed;unpaywall

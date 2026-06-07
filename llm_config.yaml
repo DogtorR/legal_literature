@@ -1,0 +1,53 @@
+active_provider: deepseek
+
+providers:
+  openai:
+    type: openai_compatible
+    base_url: https://api.openai.com/v1
+    api_key_env: OPENAI_API_KEY
+    model: gpt-4.1
+    temperature: 0.2
+    max_tokens: 4000
+    timeout: 60
+    retry_count: 2
+
+  deepseek:
+    type: openai_compatible
+    base_url: https://api.deepseek.com/v1
+    api_key_env: DEEPSEEK_API_KEY
+    model: deepseek-v4-flash
+    temperature: 0.2
+    max_tokens: 4000
+    timeout: 60
+    retry_count: 2
+
+  qwen:
+    type: openai_compatible
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    api_key_env: DASHSCOPE_API_KEY
+    model: qwen-plus
+    temperature: 0.2
+    max_tokens: 4000
+    timeout: 60
+    retry_count: 2
+
+agent:
+  language: zh
+  require_download_confirmation: true
+  default_year_from: 2024
+  default_year_to: 2025
+  default_topic_expansion: true
+  default_sources:
+    - openalex
+    - crossref
+    - europe_pmc
+    - pubmed
+    - unpaywall
+  max_results: 20
+  max_downloads: 20
+  system_prompt: >
+    你是一个合法开放获取文献检索 Agent。你只能规划合法 OA 检索和下载，
+    禁止使用 Sci-Hub、LibGen、Z-Library、cookie、机构账号、VPN、
+    验证码绕过或付费墙绕过。把用户请求解析成严格 JSON。
+  task_parse_prompt: ""
+  report_prompt: ""

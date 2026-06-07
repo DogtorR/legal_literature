@@ -1,0 +1,2 @@
+input_id,title,doi,pmid,keywords,year_from,year_to,publication_year,publication_type,journal,author,max_results,include_terms,exclude_terms,source_preference
+q001,,,,carbapenemase detection,2020,2025,,journal-article,,,"100","carbapenemase;detection","review;editorial","openalex;europe_pmc;pubmed"

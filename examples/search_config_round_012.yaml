@@ -1,0 +1,40 @@
+project_name: legal_literature_agent
+query_name: round_012_batch_20_carbapenemase_detection
+queries_file: queries_round_012.csv
+keywords:
+  - carbapenemase detection
+  - carbapenemase gene detection rapid molecular assay
+  - OXA-48 KPC NDM rapid carbapenemase detection
+year_from: 2020
+year_to: 2025
+publication_types:
+  - research-article
+  - review
+  - clinical-trial
+include_terms:
+  - carbapenemase
+  - detection
+  - KPC
+  - NDM
+  - OXA-48
+  - IMP
+  - VIM
+exclude_terms:
+  - animal only
+  - editorial
+  - comment
+  - letter
+max_results_per_source: 20
+max_downloads: 20
+dry_run: true
+sources:
+  - openalex
+  - crossref
+  - europe_pmc
+  - pubmed
+  - unpaywall
+download_policy:
+  only_legal_open_access: true
+  uncertain_to_candidates: true
+  require_license_or_oa_evidence: true
+  downloads_enabled: false

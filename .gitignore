@@ -1,0 +1,14 @@
+.env
+__pycache__/
+.pytest_cache/
+*.pyc
+metadata_results.jsonl
+candidates.jsonl
+legality_audit.jsonl
+download_plan.jsonl
+manifest.jsonl
+failures.jsonl
+search_log.jsonl
+journal_rank_cache.jsonl
+agent_runs/
+downloads/
